@@ -5,14 +5,15 @@ import javax.swing.JOptionPane;
 
 public class WASistemas {
     public static void main(String[] args) {
-        //conn = cx.getConexao("postgres","123456", "CACA");
-         
+                
         Usuario usuario = new Usuario();
             
         JOptionPane.showMessageDialog(null, "Classes instanciados!");
         
-        usuario.setNome("Gravando com herança");
-        usuario.setIdentificacao("BOLDI");
+        usuario.setCodigo(5);
+        
+        usuario.setNome("Alterando Anderson");
+        usuario.setIdentificacao("Alterar");
         usuario.setCodCargo(1);
         usuario.setCodEmpresa(1);
         usuario.setCpf("355.245.234-32");
@@ -24,7 +25,7 @@ public class WASistemas {
         
         JOptionPane.showMessageDialog(null, "Cliente setado!");
         
-        usuario.Gravar(usuario);
+        usuario.Alterar(usuario);
         
         
         JOptionPane.showMessageDialog(null, "FIM!");
